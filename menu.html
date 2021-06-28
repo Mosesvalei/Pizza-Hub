@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <script src="static/js/jQuery.js"></script>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/main.js"></script> 
+    <title>Menu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="#">Menu</a>
+            <a href="order.html">Order</a>
+        </div>  
+    </div>
+    <div id="price1">Input the price of your pizza:<input id="first"></div><br><br>
+          <div class="row">
+            <div class="col-md-4">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Pepperioni</td>
+                    <td>$ 2.00</td>
+                  </tr>
+                  <tr>
+                    <td>Salami</td>
+                    <td>$ 1.60</td>
+                  </tr>
+                  <tr>
+                    <td>Black-Olive</td>
+                    <td>$ 1.20</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          
+          
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">Pepperioni
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">Salami
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input" value="">Black-Olive
+            </label>
+          </div>
+          <br><br>
+          Choose your favorite toppings: <input id="second"><br><br>
+          <button onclick="add()">Place Order</button><br><br>
+          Total Charge<input id="answer"><br>   
+          Want your pizza delivered?<select onclick="delivery();"name="delivery" id="deliver">
+            <option></option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+          <div>
+            <button class="btn btn-success"><a href="#"> Checkout</a></button><br><br>
+          </div>
+          <div>    
+           <button class="btn btn-secondary"><a href="#first"> Place another Order</a></button><br><br>
+        </div>
+    </div>
+</body>
+</html>
