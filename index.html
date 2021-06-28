@@ -13,9 +13,9 @@
 <body>
 <div class="container">
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#order">Order</a>
+        <a class="active" href="#">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
     </div>
     <div class="Home">
         <h1>The Pizza Guy</h1>
@@ -23,10 +23,41 @@
         
     </div>
     <div class="size">
-        <a href="#small">Small</a>
-        <a href="#medium">Medium</a>
-        <a href="#Large">Large</a>
+        <a id="size" href="#size">Small</a>
+        <a id="medium" href="#medium">Medium</a>
+        <a id="large" href="#Large">Large</a>
     </div>
+    <p id="sizesmall">Order small size</p>
+    <p id="sizemedium">Order medium size</p>
+    <P id="sizelarge">Order large size</P>
+
+    <table style="width:100%">
+        <tr>
+          <th>Size</th>
+          <th>Crust</th>
+          <th>Toppings</th>
+        </tr>
+        <tr>
+          <td>Small</td>
+          <td>Crispy</td>
+          <td>Onions</td>
+        </tr>
+        <tr>
+          <td>Medium</td>
+          <td>Stuffed</td>
+          <td>Black olive</td>
+        </tr>
+        <tr>
+            <td>Large</td>
+            <td>Gluten-free</td>
+            <td>Extra cheese</td>
+          </tr>
+      </table>
+
+    Enter the First number : <input id="first">
+Enter the Second number: <input id="second">
+<button onclick="add()">Add</button>
+<input id="answer">
 </div>
 </body>
 </html>
