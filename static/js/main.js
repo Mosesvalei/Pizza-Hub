@@ -1,24 +1,24 @@
-$(document).ready(function(){
-//   alert("order ready")  
-  $("#size").on("click", function(){
-    $("#sizesmall").show();
-    $("#sizemedium").hide();
-      $("#sizelarge").hide();
-  })
+// $(document).ready(function(){
+// //   alert("order ready")  
+//   $("#size").on("click", function(){
+//     $("#sizesmall").show();
+//     $("#sizemedium").hide();
+//       $("#sizelarge").hide();
+//   })
 
-  $("#medium").on("click", function(){
-    $("#sizesmall").hide();
-    $("#sizemedium").show();
-      $("#sizelarge").hide();
-  })
+//   $("#medium").on("click", function(){
+//     $("#sizesmall").hide();
+//     $("#sizemedium").show();
+//       $("#sizelarge").hide();
+//   })
 
-  $("#large").on("click", function(){
-    $("#sizesmall").hide();
-    $("#sizemedium").hide();
-      $("#sizelarge").show();
-  })
+//   $("#large").on("click", function(){
+//     $("#sizesmall").hide();
+//     $("#sizemedium").hide();
+//       $("#sizelarge").show();
+//   })
 
-});
+// });
 
 function add(){
     var a,b,c;

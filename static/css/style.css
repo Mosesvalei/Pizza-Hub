@@ -67,3 +67,17 @@
     margin: 20px;
     height: 50%;
   }
+  .container{
+    background-size: cover;
+    padding: 2em;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
+  }
+  .body{
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+  }
