@@ -24,7 +24,7 @@
     -See a checkout button that when clicked shows the total amount charged for the orders.
   
 ## Live link
-   -  [Delani Studio](https://mosesvalei.github.io/Delani-Studio/)
+   -  [Pizza-Hub](https://mosesvalei.github.io/Pizza-Hub/)
    
 ​
 ## Technologies used
