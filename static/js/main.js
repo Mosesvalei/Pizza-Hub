@@ -1,65 +1,52 @@
-// $(document).ready(function(){
-// //   alert("order ready")  
-//   $("#size").on("click", function(){
-//     $("#sizesmall").show();
-//     $("#sizemedium").hide();
-//       $("#sizelarge").hide();
-//   })
-
-//   $("#medium").on("click", function(){
-//     $("#sizesmall").hide();
-//     $("#sizemedium").show();
-//       $("#sizelarge").hide();
-//   })
-
-//   $("#large").on("click", function(){
-//     $("#sizesmall").hide();
-//     $("#sizemedium").hide();
-//       $("#sizelarge").show();
-//   })
-
-// });
-
-function add(){
-    var a,b,c;
-    a=Number(document.getElementById("first").value);
-    b=Number(document.getElementById("second").value);
-    c= a + b;
-    document.getElementById("answer").value= c;
-    }
-
-
-function add(){
-    var a,b,c;
-    a=parseFloat(document.getElementById("first").value);
-    b=parseFloat(document.getElementById("second").value);
-    c= a + b;
-    var blank1=document.getElementById("first").value;
-    var blank2=document.getElementById("second").value;
-    if (blank1===""){
-      alert("Input your pizza price first.");
-    }else if (blank2===""){
-      alert("Input the prize of your pizza-toppings as well to get the total.");
-    }
-    else{
-    document.getElementById("answer").value= c;
-  }
-  }
-  
-  function delivery(){
-    var a=document.getElementById("deliver").value;
-    var blank1=document.getElementById("first").value;
-    var blank2=document.getElementById("second").value;
-    if(blank1===""){
-      alert("Input your pizza price first.");
-    } else if(blank2===""){
-      alert("Input your pizza-toppings price before choosing the delivery option.");
-    }
-    else if(a==="Yes"){
-     var place=prompt("Please enter the preferred location you wish your pizza get delivered");
-     alert("Your order will be delivered to "+place+" once you checkout.");
-     alert("You will be charged $ 2.00 as delivery fee.Thank you, enjoy every bite.");
-   } else if(a==="No"){
-     alert("Thank you for placing your order.");
-   }
-  }
+$(document).ready(function() {
+    //form function to submit the users input, calculate total for the order, and prompt the user for some details
+      $("#text-center").submit(function(event) {
+        //functions to get user input from the forms
+        // function flavor() {
+        //   var pizzaFlavour = document.getElementById("flavor").value;
+        //   return parseInt(pizzaFlavour);
+        // }
+        function size() {
+          var pizzaSize = document.getElementById("size").value;
+          return parseInt(pizzaSize);
+        }
+        function crust() {
+          var pizzaCrust = document.getElementById("crust").value;
+          return parseInt(pizzaCrust);
+        }
+        function topping() {
+          var pizzaTopping = document.getElementById("topping").value;
+          return parseInt(pizzaTopping);
+        }
+        function number() {
+          var pizzaNumber = document.getElementById("quantity").value;
+          return parseInt(pizzaNumber);
+        }
+        //a constructor to create objects/instances of a user's orders
+        function Order(size, crust, topping, quantity) {
+        //   this.newFlavor = flavor;
+          this.newSize = size;
+          this.newCrust = crust;
+          this.newTopping = topping;
+          this.newQuantity = quantity;
+        }
+        //an object/instance (of the above constructor) to save the users order
+        var userInput = new Order(size(), crust(), topping(), number());
+        //a variable to store the total expenditure of the user
+        var totalCost =
+          (userInput.newSize +
+            userInput.newCrust +
+            userInput.newTopping +
+            userInput.newFlavor) *
+          userInput.newQuantity;
+        //prompts for the user
+        alert("Your charges for Pizza" + totalCost);
+        prompt("enter your email address for delivery");
+        prompt("enter your phone number for contact details");
+        prompt("enter your location insert street and building number");
+        alert("Your pizza will be delivered. Thanks for ordering with us");
+        //a method to reset the form after all operations have been completed
+        $("#text-center").reset();
+        event.preventDefault();
+      });
+    });

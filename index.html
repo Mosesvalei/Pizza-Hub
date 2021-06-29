@@ -47,23 +47,67 @@
                 <tr>
                 <td>Medium</td>
                 <td>Stuffed</td>
-                <td>Black olive</td>
+                <td>Capers</td>
                 </tr>
                 <tr>
                     <td>Large</td>
                     <td>Gluten-free</td>
-                    <td>Extra cheese</td>
+                    <td>Potato</td>
                 </tr>
             </table>
         </div>
-            <div class="prices"> 
+            <!-- <div class="prices"> 
                 <h3>Check how much a combination of crusts' size and topping cost</h3>
                 <p>Check prices on our <a href="menu.html">Menu page</a></p>
                 Enter the First food item: <input id="first">
                 Enter the Second food item: <input id="second">
                 <button onclick="add()">Add</button>
                 <input id="answer">
-            </div>
+            </div> -->
+            
+            <form class="text-center" id="text-center">
+                <label>pizza Flavor</label><br>
+                <select class="flavors" id="flavor" required><br>
+                  <option label="chicken alfredo pizza" value="$9.00">Chicken Alfredo Pizza</option>
+                  <option label="Taco Quesadila Pizza" value="$11.00">Taco Quesadila Pizza</option>
+                  <option label="Mushrooms" value="$5.00">Mushrooms</option>
+                  <option label="Macaroni And Cheese Pizza" value="$8.00">Macaroni And Cheese Pizza</option>
+                  <option label="Beef pizza" value="$6.00">Beef pizza</option>
+                  <option label="Sausage pizza" value="$9.50">Sausage pizza</option>
+                </select><br>
+                <br><label>pizza Size</label><br>
+                <select class="sizes" id="size" required><br>
+            <option label="Regular" value="$6.50">Regular</option>
+            <option label="Medium" value="$8.50">Medium</option>
+            <option label="Large" value="$10.00">Large</option>
+          </select><br>
+          <br><label>pizza Crust</label><br>
+          <select class="crust" id="crust" required><br>
+            <option label="Thin Crust" value="$11.50">Thin Crust</option>
+            <option label="Flatbed" value="$11.20">Flatbed</option>
+            <option label="Chicago Deep" value="$12.00">Chicago Deep</option>
+            <option label="Double Crust" value="$15.00">Double Crust</option>
+            <option label="Stuffed Crust" value="$12.50">Stuffed Crust</option>
+          </select><br>
+          <br><label>pizza Topping</label><br>
+          <select class="toppings" id="topping" required><br>
+            <option label="Pepperoni" value="$1.00">Pepperoni</option>
+            <option label="Capers" value="$1.80">Capers</option>
+            <option label="Onions" value="$1.50">Onions</option>
+            <option label="Potato" value="$1.64">Potato</option>
+            <option label="Sliced mushrooms" value="$1.700">Mixed sliced mushrooms</option>
+          </select><br>
+          <br><label>Number of pizza</label><br>
+          <input value="" required placeholder="number of pizza" id="quantity"></input><br>
+          <div class="button">
+            <br><br><button type="submit" id="btn"
+            label="">submit</button>
+          </div>
+        </form>
+
+
+
+
     </div>
 </div>
 </body>
